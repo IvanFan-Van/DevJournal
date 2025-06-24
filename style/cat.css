@@ -1,0 +1,10 @@
+.cat-container {
+    position: fixed;
+    bottom: -2px;
+    left: 0;
+}
+
+#cat-icon {
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
