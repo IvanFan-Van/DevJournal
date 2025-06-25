@@ -1,0 +1,46 @@
+.container  {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: rgb(0, 0, 0);
+    min-height: 100vh;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.container > .sidebar {
+    width: 100%;
+    height: 50%;
+    position: sticky;
+    background-color: rgb(50, 54, 94);
+}
+
+
+.sidebar > .sidebar-item1 {
+    height:50%;
+    margin-bottom: 1rem;
+    background-color: antiquewhite;
+}
+
+.sidebar > .sidebar-item2 {
+    height:15%;
+    margin-bottom: 1rem;
+    background-color: antiquewhite;
+}
+.sidebar > .sidebar-item3 {
+    height:35%;
+    margin-bottom: 1rem;
+    background-color: antiquewhite;
+}
+
+.container > .content{
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(50, 54, 94);
+}
+
+.content > .test{
+    height:2000px;
+    background-color: rgb(97, 98, 113);
+}
