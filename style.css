@@ -3,7 +3,7 @@
     grid-template-columns: 20% 1fr;
     gap: 1rem;
     padding: 1rem;
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(0, 0, 0); */
     min-height: 100vh;
     max-width: 1150px;
     margin: 0 auto;
@@ -13,34 +13,94 @@
     width: 100%;
     height: 50%;
     position: sticky;
-    background-color: rgb(50, 54, 94);
+    /* background-color: rgb(50, 54, 94); */
 }
 
-
-.sidebar > .sidebar-item1 {
-    height:50%;
+.sidebar > .sidebar-items {
     margin-bottom: 1rem;
     background-color: antiquewhite;
+    border-radius: 15px 15px 15px 15px;
+}  
+
+.sidebar > #item1 {
+    height:60%;
 }
 
-.sidebar > .sidebar-item2 {
+#item1 > div{
+    padding: 2rem;
+    height:auto;
+}
+
+.sidebar > #item2 {
     height:15%;
-    margin-bottom: 1rem;
-    background-color: antiquewhite;
 }
-.sidebar > .sidebar-item3 {
-    height:35%;
-    margin-bottom: 1rem;
-    background-color: antiquewhite;
+.sidebar > #item3 {
+    height:25%;
 }
 
 .container > .content{
     flex: 1;
-    padding: 20px;
-    background-color: rgb(50, 54, 94);
+    height: 2000px;
+    background-color: antiquewhite;
+    border-radius: 15px 15px 15px 15px;
 }
 
-.content > .test{
-    height:2000px;
-    background-color: rgb(97, 98, 113);
+.content > .head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    background-color: rgb(61, 62, 69);
+    background: linear-gradient(to top, rgb(255, 235, 208), white);
+}
+
+.head > .header{
+    font-size: 4rem;
+    color: rgb(61, 62, 69);
+    font-weight: bold;
+    text-align: center;
+}
+
+.profile-picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 15px 0 0;
+    padding: 1rem;
+}
+
+.list > li{
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#item2 #item2-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.1rem;
+    height: 100%;
+    width: 100%;
+    max-width: 200px;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+.item2-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: #f5f5f5;
+    text-decoration: none;
+}
+
+.item2-link:hover {
+    background: #e0e0e0;
 }
