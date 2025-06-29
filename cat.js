@@ -5,42 +5,25 @@ class Cat {
     /**
      * @constructor
      */
-    constructor() {
-        /**
-         * @property {number} speed - The speed of the animation in milliseconds.
-         * @private
-         * @default 150
-         */
+    constructor(container) {
+        if (!container) {
+            console.error("Container element is emoty for Cat animation.");
+            return;
+        }
+        this.container = container;
         this.speed = 150;
-
-        /**
-         * @property {number} currentFrame - The current frame of the animation.
-         * @private
-         * @default 0
-         */
         this.currentFrame = 0;
-
-        /**
-         * @property {number} totalFrames - The total number of frames in the animation.
-         * @private
-         * @default 5
-         */
         this.totalFrames = 5;
 
-        /**
-         * @property {HTMLElement} catIcon - The HTML element for the cat icon.
-         * @private
-         * @default null
-         */
-        this.catIcon = document.querySelector("#cat-icon");
-
-        /**
-         * animation interval timer ID
-         * @type {number|null}
-         * @private
-         * @default null
-         */
+        // Initialize cat icon element
+        this.catIcon = document.createElement("img");
+        this.catIcon.className = "cat-icon";
+        this.catIcon.src = "./assets/cat/light_cat_running_0.ico";
+        this.container.appendChild(this.catIcon);
         this.animationId = null;
+
+        // start running the animation
+        this.run();
     }
 
     /**

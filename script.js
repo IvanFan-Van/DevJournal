@@ -1,4 +1,4 @@
 import Cat from "./cat.js";
 
-const cat = new Cat();
-cat.run();
+const catContainer = document.getElementById("cat-container");
+const cat = new Cat(catContainer);

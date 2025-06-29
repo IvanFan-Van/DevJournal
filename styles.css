@@ -10,3 +10,9 @@ body {
     min-height: 100vh;
     position: relative;
 }
+
+#cat-container {
+    position: fixed;
+    bottom: -2px;
+    left: 0;
+}
