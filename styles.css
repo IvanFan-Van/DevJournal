@@ -1,4 +1,5 @@
 @import "./style/cat.css";
+@import "./style/preloading.css";
 
 /* 
 ======================
@@ -38,7 +39,6 @@ STYLES
     grid-template-columns: 20% 1fr;
     gap: 2rem;
     padding: 1rem;
-    max-width: 1650px;
     margin: 0 auto;
 }
 
@@ -72,7 +72,6 @@ STYLES
 .sidebar > #item3 {
     position: sticky;
     top: 10px;
-    z-index: 10;
 }
 
 .container > .content {
