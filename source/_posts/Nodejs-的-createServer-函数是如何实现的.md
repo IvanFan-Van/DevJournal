@@ -2,7 +2,7 @@
 title: Nodejs 的 createServer 函数是如何实现的
 abbrlink: e19be316
 date: 2025-10-07 11:04:25
-tags:
+tags: [nodejs]
 ---
 nodejs 中的 createServer 是如何实现的? 其底层返回的 web 服务器具体要具备哪些功能? 我应该如何实现一个自己的 createServer 函数? 
 
