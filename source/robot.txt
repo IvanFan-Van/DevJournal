@@ -1,0 +1,8 @@
+# 基本配置
+User-agent: *
+Allow: /
+
+# 禁止爬取的文件类型
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.css$
