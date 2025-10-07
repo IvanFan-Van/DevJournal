@@ -1,5 +1,6 @@
 ---
 title: 什么是 JIT
+abbrlink: ba699747
 date: 2025-10-07 10:57:22
 tags:
 ---

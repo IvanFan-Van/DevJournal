@@ -14,7 +14,11 @@ timezone: ""
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://example.com
-permalink: :year/:month/:day/:title/
+# permalink: :year/:month/:day/:title/
+permalink: posts/:abbrlink.html
+abbrlink:
+    alg: crc32 # 算法：crc16(default) and crc32
+    rep: hex # 进制：dec(default) and hex
 permalink_defaults:
 pretty_urls:
     trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -110,6 +114,7 @@ theme: fluid
 deploy:
     type: ""
 
+# hexo-generator-sitemap
 sitemap:
     path: sitemap.xml # 生成的站点地图文件名（默认值）
     rel: false # 是否在首页添加 rel="sitemap" 链接（默认关闭）
@@ -120,4 +125,4 @@ sitemap:
     lastmod: false # 自动使用文章最后修改时间作为 lastmod（需 Git 或文件系统支持）
     changefreq: monthly # 全局默认更新频率（daily/weekly/monthly/yearly/never）
     priority: 0.6 # 全局默认优先级（0.0~1.0）
-    template: # 自定义 XML 模板路径（高级用户）
+    # template: # 自定义 XML 模板路径（高级用户）

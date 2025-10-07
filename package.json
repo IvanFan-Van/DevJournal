@@ -27,6 +27,7 @@
     "nunjucks": "^3.2.4"
   },
   "devDependencies": {
+    "hexo-abbrlink": "^2.2.1",
     "hexo-generator-sitemap": "^3.0.1"
   }
 }
