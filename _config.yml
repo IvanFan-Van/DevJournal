@@ -109,3 +109,15 @@ theme: fluid
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
     type: ""
+
+sitemap:
+    path: sitemap.xml # 生成的站点地图文件名（默认值）
+    rel: false # 是否在首页添加 rel="sitemap" 链接（默认关闭）
+    tags: true # 是否包含标签页（默认包含）
+    categories: false # 是否包含分类页（默认包含）
+    exclude: # 排除特定路径（支持正则表达式）
+        - /404.html
+    lastmod: false # 自动使用文章最后修改时间作为 lastmod（需 Git 或文件系统支持）
+    changefreq: monthly # 全局默认更新频率（daily/weekly/monthly/yearly/never）
+    priority: 0.6 # 全局默认优先级（0.0~1.0）
+    template: # 自定义 XML 模板路径（高级用户）
